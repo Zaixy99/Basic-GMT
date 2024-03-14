@@ -125,7 +125,8 @@ img {
 }
 /* HEADER */
 .header {
-	background: var(--dark);
+	background:transparent;
+    padding:2rem;
     position:relative;
     position:fixed;
     width:100%;
@@ -198,7 +199,7 @@ img {
 /* HEADER MOBILE */
 @media screen and (max-width: 500px) {
 	.header__nav {
-		background:green;
+		background:var(--primary);
         position:absolute;
         top:0rem;
         right:-100rem;
@@ -210,7 +211,6 @@ img {
         justify-content:center;
         align-items:center;
         transition:.5s ease;
-        
 	}
     .header__nav ul.nav{
      display:flex;
@@ -234,6 +234,15 @@ img {
 	}
 }
 
+
+/* BANNER */
+.banner{
+    background-image:url("/img/banner_home_v1.jpg");
+    background-size:cover;
+    height:100vh;
+    background-position:center center;
+
+}
 /* REPEATABLE PATTERN  */
 :root {
 	--light: #ffffff;
