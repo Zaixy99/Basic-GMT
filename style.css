@@ -128,10 +128,10 @@ img {
 
 /* HEADER */
 .header {
-	background: transparent;
+	background:transparent;
 	padding: 2rem;
 	position: relative;
-	position: fixed;
+	position:fixed;
 	width: 100%;
 	z-index: 999;
 }
@@ -205,7 +205,7 @@ img {
 /* HEADER MOBILE */
 @media screen and (max-width: 500px) {
 	.header__nav {
-		background: var(--primary);
+		background:transparent;
 		position: absolute;
 		top: 0rem;
 		right: -100rem;
@@ -335,6 +335,85 @@ img {
         justify-content: center;
     }
 }
+/* OFFER */
+.offer{
+background:var(--light); 
+height:75vh;
+}
+.offer__text{
+    max-width: 65rem;
+	display: flex;
+	flex-direction: column;
+	gap: 4rem;
+}
+.offer__text h2{
+    font-size: 4rem;
+    color:var(--primary);
+    display:flex;
+    flex-direction: column;
+    gap:4rem;
+    text-align: left;
+    font-weight: 600; 
+}
+ .offer__text p{
+    font-size:1.5rem;
+    font-weight:500;
+    text-align:left;
+ }
+ .offer__price h4{
+    font-size: 5rem;
+    color:var(--primary);
+ }
+ .offer__price h3{
+    font-size: 5rem;
+    color:orange;
+ }
+
+ .btn {
+	display: inline-block;
+	padding: 2rem 3rem;
+	border-radius: 3rem;
+	border: 0px solid transparent;
+    transition:.5s ease;
+    text-align: center;
+}
+ @media screen and (max-width:500px){
+    .offer__text h2{
+        font-size:4rem;
+        text-align:center;
+    }
+
+    .offer__text p{
+        font-size:1.5rem;
+        font-weight:300;
+        text-align:left;
+    }
+    .offer__text a{
+        display:flex;
+        padding: .5rem 1rem;
+        border-radius: 2rem;
+        border: 3px solid transparent;
+        transition:.5s ease;
+        text-align:center;
+    }
+    .offer__text a.hover{
+        transform:translateX(1rem);
+        transition: .5s rem;
+    }
+    .btn {
+        display:flex ;
+         padding: .5rem 1rem;
+        border-radius: 2rem;
+        border: 1px solid transparent;
+        transition:.5s ease;
+        flex-direction: column;
+        text-align: center;
+    }
+    .btn:hover{
+        scale:1.5rem;
+        transform: .5s ease;
+    }
+ }
 /* REPEATABLE PATTERN  */
 :root {
 	--light: #ffffff;
